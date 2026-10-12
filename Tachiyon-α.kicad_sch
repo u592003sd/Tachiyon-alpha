@@ -1242,6 +1242,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -3791,12 +3940,6 @@
 		(uuid "2772bd41-ae31-4724-912a-a2f4f54bcb27")
 	)
 	(junction
-		(at 78.74 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ca45738-5cff-4865-81c7-0172246820b6")
-	)
-	(junction
 		(at 22.86 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3912,7 +4055,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 25.4) (xy 68.58 25.4)
+			(xy 66.04 25.4) (xy 72.39 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4492,16 +4635,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 25.4) (xy 90.17 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8809483d-f9f3-4ac5-ad44-eeb9e84d9cfa")
-	)
-	(wire
-		(pts
 			(xy 22.86 40.64) (xy 22.86 41.91)
 		)
 		(stroke
@@ -4742,7 +4875,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 25.4) (xy 78.74 25.4)
+			(xy 80.01 25.4) (xy 90.17 25.4)
 		)
 		(stroke
 			(width 0)
@@ -5059,16 +5192,6 @@
 			(type default)
 		)
 		(uuid "fa6cfce1-7077-4e32-b371-67d52c4b1343")
-	)
-	(wire
-		(pts
-			(xy 78.74 33.02) (xy 78.74 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb9bb1e5-6e2e-427f-be36-fbfa9c19c172")
 	)
 	(wire
 		(pts
@@ -5787,6 +5910,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 76.2 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11f93c06-f6e0-4589-856d-df48da735eca")
+		(property "Reference" "FB1"
+			(at 80.772 23.622 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 80.264 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 27.178 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 76.2 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd448dc4-283c-493e-b5af-57e801becab4")
+		)
+		(pin "2"
+			(uuid "20f40abb-9dac-41bf-8da5-94bbf629736c")
+		)
+		(instances
+			(project ""
+				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 90.17 22.86 0)
 		(unit 1)
@@ -6442,73 +6632,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 72.39 25.4 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47037f13-eb22-48e2-83d0-b1a599410e9a")
-		(property "Reference" "R4"
-			(at 72.39 22.606 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5k1"
-			(at 72.644 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 72.39 27.178 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 72.39 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 72.39 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b6161628-e6dc-4db8-8eb8-dc1976b826f4")
-		)
-		(pin "2"
-			(uuid "ec341fbe-2b1a-471e-ae3f-8601ad86a82d")
-		)
-		(instances
-			(project "Tachiyon-α"
-				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 165.1 173.99 0)
 		(mirror y)
@@ -6738,7 +6861,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.098 126.746 0)
+			(at 147.574 127.508 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6802,7 +6925,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "10u"
 			(at 117.094 31.242 0)
 			(effects
 				(font
@@ -7141,7 +7264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "10nF"
 			(at 59.944 31.496 0)
 			(effects
 				(font
@@ -7536,72 +7659,6 @@
 			(project "Tachiyon-α"
 				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 78.74 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91dec7a1-9fc5-4c9a-9e92-bf23f7f1f2eb")
-		(property "Reference" "#PWR09"
-			(at 78.74 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 78.74 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e1a9a37-8773-4fb9-82d7-cc06cfb46da0")
-		)
-		(instances
-			(project "Tachiyon-α"
-				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8161,7 +8218,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "10u"
 			(at 91.948 31.75 0)
 			(effects
 				(font
@@ -8207,75 +8264,6 @@
 			(project "Tachiyon-α"
 				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 78.74 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cdede01a-4b12-42ab-bbed-f67fe3aa878c")
-		(property "Reference" "C6"
-			(at 80.01 26.924 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470nF"
-			(at 78.74 31.242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 79.7052 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 78.74 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02c9c9f2-3829-49bf-bd83-c5fab9f03ca2")
-		)
-		(pin "2"
-			(uuid "477eb800-05d3-4565-b470-174d9b7789c1")
-		)
-		(instances
-			(project "Tachiyon-α"
-				(path "/f86205a2-1615-4172-bff3-84d4fdd95423"
-					(reference "C6")
 					(unit 1)
 				)
 			)
